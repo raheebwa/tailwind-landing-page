@@ -1,9 +1,12 @@
 {
 	"scripts": {
 		"build": "tailwindcss -i ./src/input.css -o ./css/output.css",
-		"watch": "tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+		"watch": "tailwindcss -i ./src/input.css -o ./css/output.css --watch",
+		"prettier": "prettier --write ./*.html"
 	},
 	"devDependencies": {
+		"prettier": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.6",
 		"tailwindcss": "^3.3.5"
 	}
 }
